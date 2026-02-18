@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aryan Academy Learning Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🎓 Aryan Academy Learning Hub</h1>
+  <p>Learn • Play • Grow 🌱</p>
+</header>
+
+<nav>
+  <button onclick="showSection('rhymes')">🎵 Nursery Rhymes</button>
+  <button onclick="showSection('videos')">🎥 Videos</button>
+  <button onclick="showSection('books')">📚 Digital Textbooks</button>
+  <button onclick="showSection('games')">🎮 Study Games</button>
+  <button onclick="showSection('dashboard')">📊 Dashboard</button>
+</nav>
+
+<!-- Nursery Rhymes -->
+<section id="rhymes" class="content">
+  <h2>🎵 Nursery Rhymes</h2>
+  <button onclick="playRhyme('twinkle')">Twinkle Twinkle</button>
+  <button onclick="playRhyme('humpty')">Humpty Dumpty</button>
+  <p id="rhymeText"></p>
+</section>
+
+<!-- Videos -->
+<section id="videos" class="content">
+  <h2>🎥 Study Videos</h2>
+  <p>Select Class & Subject</p>
+  <select>
+    <option>10th Science</option>
+    <option>10th Maths</option>
+    <option>12th Physics</option>
+  </select>
+  <p>▶ Video will be embedded here</p>
+</section>
+
+<!-- Digital Textbooks -->
+<section id="books" class="content">
+  <h2>📚 Digital Textbooks</h2>
+  <ul>
+    <li>📘 5th Std Science</li>
+    <li>📗 8th Std History</li>
+    <li>📕 10th Maths</li>
+  </ul>
+  <p>Secure PDF Reader Area</p>
+</section>
+
+<!-- Games -->
+<section id="games" class="content">
+  <h2>🎮 Learn with Games</h2>
+  <button onclick="mathGame()">Math Quiz</button>
+  <button onclick="wordGame()">Word Builder</button>
+  <p id="gameResult"></p>
+</section>
+
+<!-- Dashboard -->
+<section id="dashboard" class="content">
+  <h2>📊 My Learning Journey</h2>
+  <p>⭐ Progress: 70%</p>
+  <p>🏆 Badges Earned: 5</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
